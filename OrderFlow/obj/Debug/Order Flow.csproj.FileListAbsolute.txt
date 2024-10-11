@@ -1,0 +1,20 @@
+C:\Users\ander\OneDrive\Desktop\Order Flow\bin\Debug\Order Flow.exe.config
+C:\Users\ander\OneDrive\Desktop\Order Flow\bin\Debug\Order Flow.exe
+C:\Users\ander\OneDrive\Desktop\Order Flow\bin\Debug\Order Flow.pdb
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order Flow.csproj.AssemblyReference.cache
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order_Flow.Form1.resources
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order_Flow.Properties.Resources.resources
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order Flow.csproj.GenerateResource.cache
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order Flow.exe
+C:\Users\ander\OneDrive\Desktop\Order Flow\obj\Debug\Order Flow.pdb
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\bin\Debug\Order Flow.exe.config
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\bin\Debug\Order Flow.exe
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\bin\Debug\Order Flow.pdb
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.csproj.AssemblyReference.cache
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order_Flow.Form1.resources
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order_Flow.Properties.Resources.resources
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.csproj.GenerateResource.cache
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.exe
+C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.pdb
