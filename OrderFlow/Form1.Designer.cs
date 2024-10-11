@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.btn_close = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
+            this.btn_editar = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,11 +48,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_historico = new System.Windows.Forms.Button();
+            this.btn_planilha = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -84,6 +89,7 @@
             this.datasolicit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datalimite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_grafico = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -151,45 +157,47 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btn_grafico);
+            this.panel2.Controls.Add(this.btn_excluir);
+            this.panel2.Controls.Add(this.btn_editar);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btn_historico);
+            this.panel2.Controls.Add(this.btn_planilha);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_add);
             this.panel2.Location = new System.Drawing.Point(12, 37);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(93, 399);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // btn_excluir
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
-            this.button3.Location = new System.Drawing.Point(9, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_excluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_excluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_excluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_excluir.Location = new System.Drawing.Point(9, 370);
+            this.btn_excluir.Name = "btn_excluir";
+            this.btn_excluir.Size = new System.Drawing.Size(75, 23);
+            this.btn_excluir.TabIndex = 15;
+            this.btn_excluir.Text = "Excluir";
+            this.btn_excluir.UseVisualStyleBackColor = false;
+            this.btn_excluir.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button5
+            // btn_editar
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
-            this.button5.Location = new System.Drawing.Point(9, 341);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Editar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_editar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_editar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_editar.Location = new System.Drawing.Point(9, 292);
+            this.btn_editar.Name = "btn_editar";
+            this.btn_editar.Size = new System.Drawing.Size(75, 23);
+            this.btn_editar.TabIndex = 17;
+            this.btn_editar.Text = "Editar";
+            this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel7
             // 
@@ -223,6 +231,7 @@
             // 
             this.checkedListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
             this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkedListBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
@@ -265,6 +274,7 @@
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
             this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -279,31 +289,32 @@
             this.checkedListBox1.Size = new System.Drawing.Size(89, 90);
             this.checkedListBox1.TabIndex = 1;
             // 
-            // button2
+            // btn_historico
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
-            this.button2.Location = new System.Drawing.Point(9, 312);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Historico";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_historico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_historico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_historico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_historico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_historico.Location = new System.Drawing.Point(9, 266);
+            this.btn_historico.Name = "btn_historico";
+            this.btn_historico.Size = new System.Drawing.Size(75, 23);
+            this.btn_historico.TabIndex = 14;
+            this.btn_historico.Text = "Historico";
+            this.btn_historico.UseVisualStyleBackColor = false;
+            this.btn_historico.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button4
+            // btn_planilha
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
-            this.button4.Location = new System.Drawing.Point(9, 283);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Imprimir";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_planilha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_planilha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_planilha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_planilha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_planilha.Location = new System.Drawing.Point(9, 318);
+            this.btn_planilha.Name = "btn_planilha";
+            this.btn_planilha.Size = new System.Drawing.Size(75, 23);
+            this.btn_planilha.TabIndex = 16;
+            this.btn_planilha.Text = "Planilha";
+            this.btn_planilha.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -325,18 +336,19 @@
             this.label2.Text = "Filtros";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
-            this.button1.Location = new System.Drawing.Point(9, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Adicionar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_add.Location = new System.Drawing.Point(9, 240);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.TabIndex = 13;
+            this.btn_add.Text = "Adicionar";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel8
             // 
@@ -476,19 +488,22 @@
             // 
             // dateTimePicker5
             // 
+            this.dateTimePicker5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker5.Location = new System.Drawing.Point(169, 111);
             this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker5.Size = new System.Drawing.Size(101, 20);
             this.dateTimePicker5.TabIndex = 23;
             // 
             // dateTimePicker4
             // 
+            this.dateTimePicker4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker4.Location = new System.Drawing.Point(3, 154);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker4.Size = new System.Drawing.Size(104, 20);
             this.dateTimePicker4.TabIndex = 22;
+            this.dateTimePicker4.ValueChanged += new System.EventHandler(this.dateTimePicker4_ValueChanged);
             // 
             // label16
             // 
@@ -518,7 +533,7 @@
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker3.Location = new System.Drawing.Point(3, 111);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(96, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(104, 20);
             this.dateTimePicker3.TabIndex = 19;
             // 
             // panel12
@@ -546,7 +561,7 @@
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(169, 68);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(96, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(101, 20);
             this.dateTimePicker2.TabIndex = 18;
             // 
             // label13
@@ -588,7 +603,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 68);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(96, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // panel13
@@ -630,6 +645,20 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.chaveproduto,
@@ -638,9 +667,29 @@
             this.datasolicit,
             this.datalimite,
             this.status});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(36)))), ((int)(((byte)(56)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(36)))), ((int)(((byte)(56)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Size = new System.Drawing.Size(652, 365);
             this.dataGridView1.TabIndex = 12;
             // 
@@ -674,6 +723,19 @@
             this.status.HeaderText = "Status";
             this.status.Name = "status";
             // 
+            // btn_grafico
+            // 
+            this.btn_grafico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.btn_grafico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_grafico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_grafico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
+            this.btn_grafico.Location = new System.Drawing.Point(9, 344);
+            this.btn_grafico.Name = "btn_grafico";
+            this.btn_grafico.Size = new System.Drawing.Size(75, 23);
+            this.btn_grafico.TabIndex = 18;
+            this.btn_grafico.Text = "Grafico";
+            this.btn_grafico.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,6 +750,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -761,11 +824,11 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_historico;
+        private System.Windows.Forms.Button btn_excluir;
+        private System.Windows.Forms.Button btn_planilha;
+        private System.Windows.Forms.Button btn_editar;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -778,6 +841,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn datasolicit;
         private System.Windows.Forms.DataGridViewTextBoxColumn datalimite;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
+        private System.Windows.Forms.Button btn_grafico;
     }
 }
 

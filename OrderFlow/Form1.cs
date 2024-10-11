@@ -40,12 +40,57 @@ namespace Order_Flow
 
         private void button3_Click(object sender, EventArgs e)
         {
+            form_excluir excluirform = new form_excluir();
+            excluirform.TopLevel = false;
+            excluirform.Parent = this;
+            excluirform.Location = new Point(0, 0);
+
+            excluirform.Show();
+            excluirform.BringToFront();
 
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form_adicionar adicionarform = new form_adicionar();
+
+            adicionarform.TopLevel = false;
+            adicionarform.Parent = this;
+            adicionarform.Location = new Point(0, 0);
+
+            adicionarform.Show();
+            adicionarform.BringToFront();
+        }
+
+        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form_historico historicoform = new form_historico();
+            historicoform.TopLevel = false;
+            historicoform.Parent = this;
+            historicoform.Location = new Point(0, 0);
+            
+            historicoform.Show();
+            historicoform.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            forms_editar editarform = new forms_editar();
+            editarform.TopLevel = false;
+            editarform.Parent = this;
+            editarform.Location = new Point(0, 0);
+            editarform.Show();
+            editarform.BringToFront();
         }
     }
 }

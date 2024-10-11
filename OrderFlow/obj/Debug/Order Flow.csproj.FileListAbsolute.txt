@@ -23,9 +23,12 @@ D:\Projetos\OrderFlow\bin\Debug\Order Flow.exe
 D:\Projetos\OrderFlow\bin\Debug\Order Flow.pdb
 D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.AssemblyReference.cache
 D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Form1.resources
-D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Form2.resources
 D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Properties.Resources.resources
 D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.GenerateResource.cache
 D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
 D:\Projetos\OrderFlow\obj\Debug\Order Flow.exe
 D:\Projetos\OrderFlow\obj\Debug\Order Flow.pdb
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_adicionar.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.forms_editar.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_excluir.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_historico.resources
