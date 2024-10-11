@@ -18,3 +18,14 @@ C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.csproj.Gen
 C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.exe
 C:\Users\Aluno\Source\Repos\Orderflow\Order Flow\obj\Debug\Order Flow.pdb
+D:\Projetos\OrderFlow\bin\Debug\Order Flow.exe.config
+D:\Projetos\OrderFlow\bin\Debug\Order Flow.exe
+D:\Projetos\OrderFlow\bin\Debug\Order Flow.pdb
+D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.AssemblyReference.cache
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Form1.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Form2.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.Properties.Resources.resources
+D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.GenerateResource.cache
+D:\Projetos\OrderFlow\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
+D:\Projetos\OrderFlow\obj\Debug\Order Flow.exe
+D:\Projetos\OrderFlow\obj\Debug\Order Flow.pdb

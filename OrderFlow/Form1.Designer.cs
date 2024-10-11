@@ -73,17 +73,17 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.chaveproduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.localcoleta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datasolicit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datalimite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -100,6 +100,7 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,7 +112,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1076, 40);
+            this.panel1.Size = new System.Drawing.Size(1076, 30);
             this.panel1.TabIndex = 0;
             // 
             // toolStripContainer1
@@ -129,9 +130,9 @@
             // btn_close
             // 
             this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.Location = new System.Drawing.Point(1028, 7);
+            this.btn_close.Location = new System.Drawing.Point(1044, 2);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(38, 29);
+            this.btn_close.Size = new System.Drawing.Size(29, 26);
             this.btn_close.TabIndex = 1;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = true;
@@ -141,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(459, 12);
+            this.label1.Location = new System.Drawing.Point(467, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 17);
             this.label1.TabIndex = 1;
@@ -158,7 +159,7 @@
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(12, 53);
+            this.panel2.Location = new System.Drawing.Point(12, 37);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(93, 399);
             this.panel2.TabIndex = 1;
@@ -166,6 +167,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.button3.Location = new System.Drawing.Point(9, 370);
@@ -179,6 +181,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.button5.Location = new System.Drawing.Point(9, 341);
@@ -279,6 +282,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.button2.Location = new System.Drawing.Point(9, 312);
@@ -291,6 +295,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.button4.Location = new System.Drawing.Point(9, 283);
@@ -323,6 +328,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(216)))), ((int)(((byte)(227)))));
             this.button1.Location = new System.Drawing.Point(9, 254);
@@ -444,7 +450,7 @@
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
             this.panel10.Controls.Add(this.panel8);
             this.panel10.Controls.Add(this.panel9);
-            this.panel10.Location = new System.Drawing.Point(107, 53);
+            this.panel10.Location = new System.Drawing.Point(107, 37);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(301, 195);
             this.panel10.TabIndex = 8;
@@ -463,7 +469,7 @@
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.dateTimePicker1);
-            this.panel11.Location = new System.Drawing.Point(107, 257);
+            this.panel11.Location = new System.Drawing.Point(107, 241);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(301, 195);
             this.panel11.TabIndex = 9;
@@ -585,62 +591,11 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(96, 20);
             this.dateTimePicker1.TabIndex = 11;
             // 
-            // listView1
-            // 
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(652, 365);
-            this.listView1.TabIndex = 11;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Contato";
-            this.columnHeader1.Width = 80;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Cliente";
-            this.columnHeader2.Width = 115;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Local coleta";
-            this.columnHeader3.Width = 117;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Data de solicitação";
-            this.columnHeader4.Width = 103;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Data limite";
-            this.columnHeader5.Width = 66;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Status";
-            this.columnHeader6.Width = 107;
-            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Controls.Add(this.panel15);
-            this.panel13.Location = new System.Drawing.Point(414, 53);
+            this.panel13.Location = new System.Drawing.Point(414, 37);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(652, 399);
             this.panel13.TabIndex = 12;
@@ -667,18 +622,64 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.listView1);
+            this.panel15.Controls.Add(this.dataGridView1);
             this.panel15.Location = new System.Drawing.Point(0, 34);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(652, 365);
             this.panel15.TabIndex = 12;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.chaveproduto,
+            this.cliente,
+            this.localcoleta,
+            this.datasolicit,
+            this.datalimite,
+            this.status});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(652, 365);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // chaveproduto
+            // 
+            this.chaveproduto.HeaderText = "Chave do produto";
+            this.chaveproduto.Name = "chaveproduto";
+            // 
+            // cliente
+            // 
+            this.cliente.HeaderText = "Cliente";
+            this.cliente.Name = "cliente";
+            // 
+            // localcoleta
+            // 
+            this.localcoleta.HeaderText = "Local de coleta";
+            this.localcoleta.Name = "localcoleta";
+            // 
+            // datasolicit
+            // 
+            this.datasolicit.HeaderText = "Data de solicitação";
+            this.datasolicit.Name = "datasolicit";
+            // 
+            // datalimite
+            // 
+            this.datalimite.HeaderText = "Data limite";
+            this.datalimite.Name = "datalimite";
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(36)))), ((int)(((byte)(56)))));
-            this.ClientSize = new System.Drawing.Size(1076, 462);
+            this.ClientSize = new System.Drawing.Size(1076, 444);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -687,7 +688,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -715,6 +715,7 @@
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -756,13 +757,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label14;
@@ -777,6 +771,13 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chaveproduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn localcoleta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datasolicit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datalimite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }
 
