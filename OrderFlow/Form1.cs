@@ -40,14 +40,7 @@ namespace Order_Flow
 
         private void button3_Click(object sender, EventArgs e)
         {
-            form_excluir excluirform = new form_excluir();
-            excluirform.TopLevel = false;
-            excluirform.Parent = this;
-            excluirform.Location = new Point(0, 0);
-
-            excluirform.Show();
-            excluirform.BringToFront();
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -56,6 +49,41 @@ namespace Order_Flow
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_grafico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_grafico_Click_1(object sender, EventArgs e)
+        {
+            form_grafico graficoform = new form_grafico();
+            graficoform.TopLevel = false;
+            graficoform.Parent = this;
+            graficoform.Location = new Point(0 ,0);
+            graficoform.Show();
+            graficoform.BringToFront();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
         {
             form_adicionar adicionarform = new form_adicionar();
 
@@ -67,23 +95,18 @@ namespace Order_Flow
             adicionarform.BringToFront();
         }
 
-        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_historico_Click(object sender, EventArgs e)
         {
             form_historico historicoform = new form_historico();
             historicoform.TopLevel = false;
             historicoform.Parent = this;
             historicoform.Location = new Point(0, 0);
-            
+
             historicoform.Show();
             historicoform.BringToFront();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_editar_Click(object sender, EventArgs e)
         {
             forms_editar editarform = new forms_editar();
             editarform.TopLevel = false;
@@ -91,6 +114,17 @@ namespace Order_Flow
             editarform.Location = new Point(0, 0);
             editarform.Show();
             editarform.BringToFront();
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            form_excluir excluirform = new form_excluir();
+            excluirform.TopLevel = false;
+            excluirform.Parent = this;
+            excluirform.Location = new Point(0, 0);
+
+            excluirform.Show();
+            excluirform.BringToFront();
         }
     }
 }

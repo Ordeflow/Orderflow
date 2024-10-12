@@ -32,3 +32,4 @@ D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_adicionar.resources
 D:\Projetos\OrderFlow\obj\Debug\Order_Flow.forms_editar.resources
 D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_excluir.resources
 D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_historico.resources
+D:\Projetos\OrderFlow\obj\Debug\Order_Flow.form_grafico.resources
